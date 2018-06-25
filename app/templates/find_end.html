@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th><a href="http://127.0.0.1:9000/main/add/">增加</a></th>
+    </tr>
+    <tr>
+        <th><a href="{{ url_for('main.all_1') }}">返回</a></th>
+    </tr>
+    <tr>
+        <th>商品名称编号</th>
+        <th>商品名称</th>
+        <th>商品别名</th>
+        <th>销售价格</th>
+        <th>促销价格</th>
+        <th>更改</th>
+    </tr>
+    {% for shop in shops %}
+    <tr>
+        <th >{{ shop.shop_id }}</th>
+        <th>{{ shop.name }}</th>
+        <th>{{ shop.sub_title }}</th>
+        <th>{{ shop.original_price }}</th>
+        <th>{{ shop.promote_price }}</th>
+        <th><a href="http://127.0.0.1:9000/main/update/{{ shop.shop_id }}">修改</a>
+            <a href="http://127.0.0.1:9000/main/delate/{{ shop.shop_id }}/">删除</a>
+        </th>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>
