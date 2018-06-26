@@ -50,7 +50,7 @@ def config_db(app):
 #     })
 #
 #
-# 用户模块插件
+# 用户模块插件1
 login_manager = LoginManager()
 
 
