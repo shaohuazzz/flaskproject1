@@ -16,8 +16,8 @@ def get_app():
     return app
 
 
-# 奥克米
-# 统一注册所有的蓝图对象
+# 奥克米11
+# 统一注册所有的蓝图对象11111111
 def register_blue():
     app.register_blueprint(main, url_prefix='/main')
     app.register_blueprint(user, url_prefix='/user')

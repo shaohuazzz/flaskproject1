@@ -30,7 +30,7 @@ def config_db(app):
 # cache = Cache()
 #
 #
-# # 缓存配置
+# # 缓存配置111111111
 # def init_cache_config(app):
 #     # cache.init_app(app, config={'CACHE_TYPE': 'simple'})
 #     cache.init_app(app, config={
